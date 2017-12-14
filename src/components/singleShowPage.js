@@ -53,8 +53,6 @@ class SingleShowPage extends React.Component {
     showSeasons = (show) => {
         const seasons = show._embedded.seasons;
 
-        console.log(seasons);
-
         return (
 
             <div className="card bg-dark">
@@ -151,7 +149,6 @@ class SingleShowPage extends React.Component {
 
     render() {
 
-        console.log(this.state.show);
 
         if (this.state.show == null) {
             return <p>Loading...</p>
